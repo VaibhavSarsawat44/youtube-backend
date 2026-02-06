@@ -1,0 +1,2 @@
+PORT=8000
+MONGODB_URL=mongodb+srv://vaibhavsaraswat:y.anubhav123@cluster0.eby7cge.mongodb.net
