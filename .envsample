@@ -1,3 +1,7 @@
 PORT=8000
 MONGODB_URL=mongodb+srv://vaibhavsaraswat:y.anubhav123@cluster0.eby7cge.mongodb.net
 CORS_ORGIN=*
+ACCESS_TOKEN_SECRET=chai-aur-code
+ACCESS_TOKEN_EXPIRY=1d
+REFRESH_TOKEN_SECRET=chai-aur-backend
+REFRESH_TOKEN_EXPIRY=10d 
