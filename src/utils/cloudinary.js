@@ -18,9 +18,12 @@ cloudinary.config({
       }
     )
     // file has been uploaded successful
-    console.log("file is uploaded on cloudinary",response.url);
-    return response
+    // console.log("file is uploaded on cloudinary",response.url);
+    // return response
+    fs.unlinkSync(localFilePath)
+    return response; 
   } catch (error) {
+    console.error("Cloudinary upload error:", error.message);
     fs.unlinkSync(localFilePath)// remove the locally saved tempory file as the uplod operation got failed
     return null;
   }
